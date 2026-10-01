@@ -4618,7 +4618,7 @@ function sendCartToWhatsApp(
 
 
     const phone =
-        "96171918022";
+        "96176763852";
 
 
     const whatsappURL =
