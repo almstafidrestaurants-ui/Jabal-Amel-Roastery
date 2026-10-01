@@ -4618,10 +4618,7 @@ function sendCartToWhatsApp(
         encodeURIComponent(message);
 
 
-    window.open(
-        whatsappURL,
-        "_blank"
-    );
+  window.location.href = whatsappURL;
 }
        
 /* =========================================================
