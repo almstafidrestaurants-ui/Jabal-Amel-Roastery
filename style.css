@@ -5058,3 +5058,23 @@ min-height: 94px;
     font-weight: 700;
 
 }
+
+/* ترتيب زر واتساب */
+.whatsapp-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+/* أيقونة واتساب */
+.whatsapp-btn i,
+.whatsapp-btn img,
+.whatsapp-btn .whatsapp-icon {
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+    width: 28px !important;
+    height: 28px !important;
+    flex-shrink: 0 !important;
+}
