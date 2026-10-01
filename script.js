@@ -3788,17 +3788,27 @@ function closeCartModal() {
         return;
     }
 
+    /* فقط إغلاق السلة */
     modal.classList.remove("active");
 
     document.body.style.overflow = "";
 
+    /* مهم:
+       لا نمسح AppState.cart هنا
+    */
+
+}
+function exitMenuAndClearCart() {
+
+    /* مسح السلة */
     AppState.cart = [];
 
     saveCart();
 
     updateCartCount();
 
-    renderCartModal();
+    /* بعدها الخروج من المنيو */
+    location.reload();
 }
 /* =========================================================
    RENDER CART
