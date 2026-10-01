@@ -292,7 +292,8 @@ margin-top: 1PX;
 .loading-area {
     position: absolute;
 
-    top: 37%;
+    top: 50% !important;
+    z-index: 5 !important;
 
     width: 100%;
     padding: 0 20px;
@@ -2445,22 +2446,70 @@ min-height: 94px;
     .category-product-info p {
         font-size: 13px;
     }
-}
 
-@media (min-width: 361px) and (max-width: 430px) {
-    .menu-header {
-        height: 58px;
+    
+    .products-area .categories-section .section-title {
+        font-size: 20px !important;
     }
 
-    .categories-section {
-        padding-left: 10px;
-        padding-right: 10px;
+    .products-area .categories-section .section-title::before {
+        width: 58px !important;
     }
 
-        .category-modal-products {
-        padding-left: 11px;
-        padding-right: 11px;
+    .brand-area {
+        top: 4% !important;
     }
+
+    .brand-logo {
+        width: 115px !important;
+        height: 115px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .brand-name {
+        font-size: 27px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .brand-line {
+        width: 90px !important;
+        margin: 4px 0 !important;
+    }
+
+    .brand-subtitle {
+        font-size: 9px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .loading-area {
+           top: 50% !important;
+    z-index: 5 !important;
+    }
+
+    .loading-circle {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .loading-circle-inner {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .roastery-icon {
+        width: 105px !important;
+        height: 105px !important;
+    }
+
+    .loading-text {
+        margin-top: 17px !important;
+        font-size: 15px !important;
+    }
+
+    .loading-percent {
+        font-size: 30px !important;
+    }
+
 }
 
 @media (min-height: 850px) and (max-width: 430px) {
@@ -2552,21 +2601,85 @@ min-height: 94px;
     transition: opacity 0.5s ease;
 }
 
-@media (max-width: 360px) {
-    .brand-area { top: 9%; }
-    .brand-logo { width: 76px; height: 76px; }
-    .brand-name { font-size: 25px; }
-    .brand-subtitle { font-size: 9px; letter-spacing: 2px; }
-    .loading-area { top: 35%; }
-    .loading-circle { width: 155px; height: 155px; }
-    .loading-circle-inner { width: 128px; height: 128px; }
-    .loading-text { font-size: 14px; }
-    .loading-percent { font-size: 28px; }
-}
 
 @media (min-width: 361px) and (max-width: 430px) {
     .brand-area { top: 11%; }
     .loading-area { top: 37%; }
+     .menu-header {
+        height: 58px;
+    }
+
+    .categories-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+        .category-modal-products {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+/* منطقة الشعار */
+    .brand-area {
+        top: 4% !important;
+        z-index: 10 !important;
+    }
+
+    /* اللوغو */
+    .brand-logo {
+        width: 135px !important;
+        height: 135px !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* اسم المحمصة */
+    .brand-name {
+        margin-top: 0 !important;
+        font-size: 32px !important;
+        line-height: 1.1 !important;
+        letter-spacing: 1px !important;
+    }
+
+    /* الوصف */
+    .brand-subtitle {
+        margin-top: 5px !important;
+        font-size: 10px !important;
+        letter-spacing: 2.5px !important;
+    }
+
+
+    /* =====================================================
+       دائرة الفنجان - ننزلها تحت الوصف
+    ===================================================== */
+
+    .loading-area {
+          top: 50% !important;
+    z-index: 5 !important;
+    }
+
+    .loading-circle {
+        width: 145px !important;
+        height: 145px !important;
+
+        margin-top: 0 !important;
+    }
+
+    .loading-circle-inner {
+        width: 145px !important;
+        height: 145px !important;
+    }
+
+
+    /* نص التحميل */
+    .loading-text {
+        margin-top: 18px !important;
+        font-size: 16px !important;
+    }
+
+    /* النسبة */
+    .loading-percent {
+        margin-top: 3px !important;
+        font-size: 32px !important;
+    }
 }
 
 @media (min-height: 850px) and (max-width: 430px) {
@@ -2706,26 +2819,6 @@ min-height: 94px;
 
 }
 
-
-/* أصغر الشاشات */
-@media (max-width: 360px) {
-
-    .products-area .categories-section .section-title {
-        font-size: 20px !important;
-    }
-
-    .products-area .categories-section .section-title::before {
-        width: 58px !important;
-    }
-}
-/* =========================================================
-
-/* =========================================================
-   PRODUCT OPTIONS MODAL
-   CLEAN VERSION - MOBILE 390 x 844
-   Only this section controls the product options screen.
-   Splash Screen / Main Screen remain untouched above.
-========================================================= */
 
 /* ---------------------------------------------------------
    MODAL CONTAINER
