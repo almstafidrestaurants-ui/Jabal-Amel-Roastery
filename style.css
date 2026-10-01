@@ -3337,10 +3337,13 @@ min-height: 94px;
 --------------------------------------------------------- */
 
 @media (max-width: 390px) {
-
-    #productOptionsModal .product-options-content {
+#productOptionsModal .product-options-content {
         width: 100vw !important;
     }
+
+    /* =========================
+       خيارات الوزن
+    ========================= */
 
     #productOptionsModal .weight-section {
         right: 14px !important;
@@ -3352,22 +3355,48 @@ min-height: 94px;
         min-height: 45px !important;
     }
 
+
+    /* =========================
+       الكمية
+    ========================= */
+
     #productOptionsModal .quantity-section {
         left: 22px !important;
-        width: calc(100vw - 166px) !important;
+
+        width: 190px !important;
         height: 56px !important;
+
+        border-radius: 18px !important;
     }
 
+
+    /* =========================
+       السعر
+    ========================= */
+
     #productOptionsModal .selected-weight-price {
-        left: calc(100vw - 152px) !important;
-        width: 106px !important;
+        left: auto !important;
+        right: 22px !important;
+
+        width: 100px !important;
         height: 56px !important;
+
+        border-radius: 18px !important;
+
+        font-size: 16px !important;
     }
+
+
+    /* =========================
+       زر إضافة للسلة
+    ========================= */
 
     #productOptionsModal .options-add-cart {
         left: 22px !important;
         width: calc(100vw - 44px) !important;
         height: 56px !important;
+
+        border-radius: 18px !important;
     }
 }
 
