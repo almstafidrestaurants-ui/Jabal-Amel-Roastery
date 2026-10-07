@@ -860,24 +860,7 @@ function updateModalPrice() {
             const match =
                 packageText.match(/^(\d+)x(\d+)$/i);
 
-            if (match) {
-
-                const pieces =
-                    Number(match[1]);
-
-                const gramsPerPiece =
-                    Number(match[2]);
-
-                const totalGrams =
-                    pieces * gramsPerPiece;
-
-                const multiplier =
-                    totalGrams / 1000;
-
-                unitPrice = calculateMoney(
-                    basePrice * multiplier
-                );
-            }
+         
         }
     }
 
